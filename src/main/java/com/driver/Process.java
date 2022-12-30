@@ -40,6 +40,8 @@ public class Process {
     public void delete_all(){
         db.TeacherDB = new HashMap<>();
         db.student_Teacher = new HashMap<>();
+        db.studentDB = new HashMap<>();
+        db.stu = new ArrayList<>();
     }
 
 }
