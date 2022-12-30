@@ -4,10 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Process {
+public class StudentService {
 
     @Autowired
-    DataBase db;
+    StudentRepository db;
     public void add_student(Student student){
         db.add_student(student);
     }

@@ -3,7 +3,7 @@ package com.driver;
 import org.springframework.stereotype.Repository;
 import java.util.*;
 @Repository
-public class DataBase {
+public class StudentRepository {
     public HashMap<String,Student> studentDB = new HashMap<>();
     public HashMap<String,Teacher> TeacherDB = new HashMap<>();
     public HashMap<String,List<String>> student_Teacher = new HashMap<>();
