@@ -11,6 +11,11 @@ public class Teacher {
     public Teacher() {
 
     }
+    public Teacher(String name,int numberofstudent,int age){
+        this.name = name;
+        this.numberOfStudents = numberofstudent;
+        this.age = age;
+    }
 
     public String getName() {
         return name;
