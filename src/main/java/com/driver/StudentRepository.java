@@ -28,25 +28,17 @@ public class StudentRepository {
     }
 
     public Student getStudentByNameFromDb(String name) {
-        Student studentObj = null;
-        for(String student : studentDb.keySet()){
-            if (Objects.equals(student, name)){
-                studentObj=studentDb.get(student);
-                break;
-            }
+        if(studentDb.containsKey(name)){
+            return studentDb.get(name);
         }
-        return studentObj;
+        return null;
     }
 
     public Teacher getTeacherByNameFromDb(String name) {
-        Teacher teacherObj = null;
-        for(String teacher : teacherDb.keySet()){
-            if (Objects.equals(teacher, name)){
-                teacherObj=teacherDb.get(teacher);
-                break;
-            }
+        if(teacherDb.containsKey(name)){
+            return teacherDb.get(name);
         }
-        return teacherObj;
+        return null;
     }
 
     public List<String> getStudentsByTeacherNameFromDb(String teacher) {
