@@ -33,5 +33,13 @@ public class Process {
         List<String> stt = db.getStu();
         return stt;
     }
+    public void delete_name(String name){
+        db.TeacherDB.remove(name);
+        db.student_Teacher.remove(name);
+    }
+    public void delete_all(){
+        db.TeacherDB = new HashMap<>();
+        db.student_Teacher = new HashMap<>();
+    }
 
 }
