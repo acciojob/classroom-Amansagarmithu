@@ -29,5 +29,9 @@ public class Process {
         List<String> lt = db.getStudent_Teacher().get(name);
         return lt;
     }
+    public List<String> get_student(){
+        List<String> stt = db.getStu();
+        return stt;
+    }
 
 }

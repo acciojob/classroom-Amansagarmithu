@@ -7,9 +7,11 @@ public class DataBase {
     public HashMap<String,Student> studentDB = new HashMap<>();
     public HashMap<String,Teacher> TeacherDB = new HashMap<>();
     public HashMap<String,List<String>> student_Teacher = new HashMap<>();
+    public List<String> stu = new ArrayList<>();
 
     public void add_student(Student student){
         studentDB.put(student.getName(),student);
+        stu.add(student.getName());
     }
     public void add_teacher(Teacher teacher){
         TeacherDB.put(teacher.getName(),teacher);
@@ -35,5 +37,9 @@ public class DataBase {
 
     public HashMap<String, List<String>> getStudent_Teacher() {
         return student_Teacher;
+    }
+
+    public List<String> getStu() {
+        return stu;
     }
 }
