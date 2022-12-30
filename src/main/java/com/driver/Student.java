@@ -9,6 +9,11 @@ public class Student {
     public Student(){
 
     }
+    public Student(String name,int age,double marks){
+        this.name = name;
+        this.age = age;
+        this.averageScore = marks;
+    }
 
     public String getName() {
         return name;
@@ -33,4 +38,5 @@ public class Student {
     public void setAverageScore(double averageScore) {
         this.averageScore = averageScore;
     }
+
 }
